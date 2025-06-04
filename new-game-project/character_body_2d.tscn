@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://xqmmek4x3syf"]
+[gd_scene load_steps=6 format=3 uid="uid://xqmmek4x3syf"]
 
 [ext_resource type="Texture2D" uid="uid://b5hli61rckvkp" path="res://80056 V3.png" id="1_f50pn"]
+[ext_resource type="Script" uid="uid://bphhgfk4xue1o" path="res://character_body_2d.gd" id="1_ij6vw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
 atlas = ExtResource("1_f50pn")
@@ -21,13 +22,15 @@ animations = [{
 radius = 51.0
 height = 132.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_ghijl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 1)
+position = Vector2(7, 13)
 shape = SubResource("CapsuleShape2D_44cfe")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
