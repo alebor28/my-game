@@ -4,7 +4,6 @@
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(0.000488281, 0.000244141)
-scale = Vector2(1, 1)
 
 [node name="Line2D" type="Line2D" parent="StaticBody2D"]
 position = Vector2(5095, 2250)
@@ -16,3 +15,5 @@ width = 1.0
 position = Vector2(6650.41, 4176.24)
 scale = Vector2(24.6323, 19.0972)
 polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+
+[node name="Platforms" type="Node2D" parent="."]
