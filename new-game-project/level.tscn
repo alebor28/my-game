@@ -1,19 +1,200 @@
-[gd_scene format=3 uid="uid://bs77lp01d0jng"]
+[gd_scene load_steps=2 format=3 uid="uid://bs77lp01d0jng"]
+
+[ext_resource type="PackedScene" uid="uid://xqmmek4x3syf" path="res://character_body_2d.tscn" id="1_u52ul"]
 
 [node name="level" type="Node2D"]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms"]
 position = Vector2(0.000488281, 0.000244141)
 
-[node name="Line2D" type="Line2D" parent="StaticBody2D"]
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D"]
 position = Vector2(5095, 2250)
 scale = Vector2(0.3, 0.3)
 points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
 width = 1.0
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D"]
 position = Vector2(6650.41, 4176.24)
 scale = Vector2(24.6323, 19.0972)
 polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
 
-[node name="Platforms" type="Node2D" parent="."]
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Platforms"]
+position = Vector2(437, -310)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D2"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D2"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D2"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Platforms"]
+position = Vector2(-465, -368)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D3"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D3"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D3"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Platforms"]
+position = Vector2(299, -702)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D4"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D4"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D4"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="Platforms"]
+position = Vector2(-424, -815)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D5"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D5"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D5"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="Platforms"]
+position = Vector2(-424, -815)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D6"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D6"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D6"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="Platforms"]
+position = Vector2(501, -1144)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D7"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D7"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D7"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="Platforms"]
+position = Vector2(127, -982)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D8"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D8"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D8"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="Platforms"]
+position = Vector2(-449, -1346)
+
+[node name="Line2D" type="Line2D" parent="Platforms/StaticBody2D9"]
+position = Vector2(5095, 2250)
+scale = Vector2(0.3, 0.3)
+points = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+width = 1.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Platforms/StaticBody2D9"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D9"]
+position = Vector2(6650.41, 4176.24)
+scale = Vector2(24.6323, 19.0972)
+polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
+one_way_collision = true
+
+[node name="player" parent="." instance=ExtResource("1_u52ul")]
+position = Vector2(17, -12)
+scale = Vector2(1.1, 1.1)
