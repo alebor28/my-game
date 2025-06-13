@@ -19,6 +19,17 @@ config/icon="res://icon.svg"
 
 enabled=PackedStringArray("res://addons/AS2P/plugin.cfg")
 
+[input]
+
+left={
+"deadzone": 0.2,
+"events": []
+}
+right={
+"deadzone": 0.2,
+"events": []
+}
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
