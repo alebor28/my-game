@@ -64,6 +64,8 @@ scale = Vector2(24.6323, 19.0972)
 polygon = PackedVector2Array(-273, -222, -268.44, -222.651, -266, -223, -261, -219, -264, -215, -272, -214, -278, -218, -273, -222)
 one_way_collision = true
 
+[node name="Sprite2D" type="Sprite2D" parent="Platforms/StaticBody2D3/CollisionPolygon2D"]
+
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Platforms/StaticBody2D3"]
 position = Vector2(6650.41, 4176.24)
 scale = Vector2(24.6323, 19.0972)
