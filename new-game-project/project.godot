@@ -11,9 +11,14 @@ config_version=5
 [application]
 
 config/name="New Game Project"
-run/main_scene="uid://bs77lp01d0jng"
+run/main_scene="uid://dd0d8hymie6yp"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=960
 
 [editor_plugins]
 

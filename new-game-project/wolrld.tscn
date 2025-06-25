@@ -1,14 +1,25 @@
-[gd_scene load_steps=4 format=4 uid="uid://dd0d8hymie6yp"]
+[gd_scene load_steps=5 format=4 uid="uid://dd0d8hymie6yp"]
 
 [ext_resource type="Texture2D" uid="uid://c4ptps8wfq6v" path="res://Assets/industrial.v1.png" id="1_4lyju"]
+[ext_resource type="PackedScene" uid="uid://xqmmek4x3syf" path="res://character_body_2d.tscn" id="2_h57jk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h57jk"]
 texture = ExtResource("1_4lyju")
 0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.359718, 8, 0, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/one_way = true
 1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.359718, 8, 0, 8, 8, -8, 8)
+1:0/0/physics_layer_0/polygon_0/one_way = true
 2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.359718, 8, 0, 8, 8, -8, 8)
+2:0/0/physics_layer_0/polygon_0/one_way = true
 3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.359718, 8, 0, 8, 8, -8, 8)
+3:0/0/physics_layer_0/polygon_0/one_way = true
 4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.359718, 8, 0, 8, 8, -8, 8)
+4:0/0/physics_layer_0/polygon_0/one_way = true
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
@@ -30,10 +41,20 @@ texture = ExtResource("1_4lyju")
 23:0/0 = 0
 24:0/0 = 0
 0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/one_way = true
 1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_0/polygon_0/one_way = true
 2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0/physics_layer_0/polygon_0/one_way = true
 3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/one_way = true
 4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/one_way = true
 5:1/0 = 0
 6:1/0 = 0
 7:1/0 = 0
@@ -366,10 +387,21 @@ texture = ExtResource("1_4lyju")
 7:22/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_8cbpv"]
+physics_layer_0/collision_layer = 1
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/1 = SubResource("TileSetAtlasSource_h57jk")
 
 [node name="wolrld" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAACAAEAAQAKAA0AAAAEAAEAAQAKAA0AAAAEAAIAAQAKAA4AAAAFAAEAAQALAA0AAAAFAAIAAQALAA4AAAAGAAEAAQAKAA0AAAAGAAIAAQAKAA4AAAAHAAEAAQALAA0AAAAHAAIAAQALAA4AAAAGAAMAAQAKAA0AAAAGAAQAAQAKAA4AAAAHAAMAAQALAA0AAAAHAAQAAQALAA4AAAAGAAUAAQAKAA0AAAAGAAYAAQAKAA4AAAAHAAUAAQALAA0AAAAHAAYAAQALAA4AAAAEAAUAAQAKAA0AAAAEAAYAAQAKAA4AAAAFAAUAAQALAA0AAAAFAAYAAQALAA4AAAACAAUAAQAKAA0AAAACAAYAAQAKAA4AAAADAAUAAQALAA0AAAADAAYAAQALAA4AAAACAAMAAQAKAA0AAAACAAQAAQAKAA4AAAADAAMAAQALAA0AAAADAAQAAQALAA4AAAAEAAMAAQAKAA0AAAAEAAQAAQAKAA4AAAAFAAMAAQALAA0AAAAFAAQAAQALAA4AAAA=")
+tile_map_data = PackedByteArray("AAD9/wEAAQAAAAAAAAD9/wIAAQAAAAEAAAD+/wEAAQABAAAAAAD+/wIAAQABAAEAAAD//wEAAQACAAAAAAD//wIAAQACAAEAAAAAAAEAAQADAAAAAAAAAAIAAQADAAEAAAABAAEAAQAEAAAAAAABAAIAAQAEAAEAAAAHAP7/AQAAAAAAAAAHAP//AQAAAAEAAAAIAP7/AQABAAAAAAAIAP//AQABAAEAAAAJAP7/AQACAAAAAAAJAP//AQACAAEAAAAKAP7/AQADAAAAAAAKAP//AQADAAEAAAD1//3/AQAAAAAAAAD1//7/AQAAAAEAAAD2//3/AQABAAAAAAD2//7/AQABAAEAAAD3//3/AQACAAAAAAD3//7/AQACAAEAAAD4//3/AQADAAAAAAD4//7/AQADAAEAAAAFAPb/AQAAAAAAAAAFAPf/AQAAAAEAAAAGAPb/AQABAAAAAAAGAPf/AQABAAEAAAAHAPb/AQACAAAAAAAHAPf/AQACAAEAAAAIAPb/AQADAAAAAAAIAPf/AQADAAEAAAD5//b/AQAAAAAAAAD5//f/AQAAAAEAAAD6//b/AQABAAAAAAD6//f/AQABAAEAAAD7//b/AQACAAAAAAD7//f/AQACAAEAAAD8//b/AQADAAAAAAD8//f/AQADAAEAAADs/+v/AQAAAAAAAADs/+z/AQAAAAEAAADt/+v/AQABAAAAAADt/+z/AQABAAEAAADu/+v/AQACAAAAAADu/+z/AQACAAEAAADv/+v/AQADAAAAAADv/+z/AQADAAEAAAAVAOz/AQAAAAAAAAAVAO3/AQAAAAEAAAAWAOz/AQABAAAAAAAWAO3/AQABAAEAAAAXAOz/AQACAAAAAAAXAO3/AQACAAEAAAAYAOz/AQADAAAAAAAYAO3/AQADAAEAAAAGAOn/AQAAAAAAAAAGAOr/AQAAAAEAAAAHAOn/AQABAAAAAAAHAOr/AQABAAEAAAAIAOn/AQACAAAAAAAIAOr/AQACAAEAAAAJAOn/AQADAAAAAAAJAOr/AQADAAEAAAA=")
 tile_set = SubResource("TileSet_8cbpv")
+
+[node name="player" parent="." instance=ExtResource("2_h57jk")]
+position = Vector2(-9, -92)
+scale = Vector2(0.2, 0.2)
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+scale = Vector2(0.5, 0.5)
