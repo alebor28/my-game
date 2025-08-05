@@ -407,4 +407,7 @@ scale = Vector2(0.2, 0.2)
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 scale = Vector2(0.5, 0.5)
+limit_left = -480
+limit_right = 480
+position_smoothing_enabled = true
 script = ExtResource("3_8cbpv")
