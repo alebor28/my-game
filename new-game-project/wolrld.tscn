@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://dd0d8hymie6yp"]
+[gd_scene load_steps=7 format=4 uid="uid://dd0d8hymie6yp"]
 
 [ext_resource type="Texture2D" uid="uid://c4ptps8wfq6v" path="res://Assets/industrial.v1.png" id="1_4lyju"]
 [ext_resource type="PackedScene" uid="uid://xqmmek4x3syf" path="res://character_body_2d.tscn" id="2_h57jk"]
 [ext_resource type="Script" uid="uid://cn33v32kaxqkl" path="res://camera_2d.gd" id="3_8cbpv"]
+[ext_resource type="PackedScene" uid="uid://dhsyp3knr0gep" path="res://node_2d.tscn" id="4_073i6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h57jk"]
 texture = ExtResource("1_4lyju")
@@ -411,3 +412,9 @@ limit_left = -480
 limit_right = 480
 position_smoothing_enabled = true
 script = ExtResource("3_8cbpv")
+
+[node name="killzone" parent="player/Camera2D" instance=ExtResource("4_073i6")]
+position = Vector2(90, 920)
+scale = Vector2(10, 10)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="player/Camera2D"]

@@ -1,10 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhsyp3knr0gep"]
+[gd_scene load_steps=3 format=3 uid="uid://dhsyp3knr0gep"]
 
 [ext_resource type="Script" uid="uid://c586pmkqr7nos" path="res://boundary.gd" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://cn33v32kaxqkl" path="res://camera_2d.gd" id="2_0e48y"]
 
 [node name="Node2D" type="Area2D"]
 script = ExtResource("1_wtcfe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Killzone" type="Area2D" parent="CollisionShape2D"]
+script = ExtResource("2_0e48y")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
