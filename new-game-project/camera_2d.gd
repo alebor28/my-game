@@ -13,3 +13,4 @@ func _process(delta: float) -> void:
 	if target:
 		position.y = target.position.y
 		#position.x = some_fixed_x
+		
