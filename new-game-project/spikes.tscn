@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://77kn5axg0lky"]
+
+[ext_resource type="Texture2D" uid="uid://errv8vtrny31" path="res://Assets/16-bit-spike-Sheet.png" id="1_s0g1x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrdsm"]
+atlas = ExtResource("1_s0g1x")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8fhau"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrdsm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Spikes" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8fhau")
