@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdu1jq2yiuk20"]
+
+[ext_resource type="PackedScene" uid="uid://bjsfmcdgljtqw" path="res://Player.tscn" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://fjuu5gmhvd02" path="res://CameraController.gd" id="2_tlwt5"]
+[ext_resource type="Script" uid="uid://bws2nvfyuekh7" path="res://Killzone.gd" id="3_aqk2v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fj7yv"]
+size = Vector2(405, 20)
+
+[node name="main" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-109, -202)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(192.5, 0)
+shape = SubResource("RectangleShape2D_fj7yv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-81, -174)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(550, -101)
+shape = SubResource("RectangleShape2D_fj7yv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-802, -116)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(831, -235)
+shape = SubResource("RectangleShape2D_fj7yv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2(-349, -182)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(831, -235)
+shape = SubResource("RectangleShape2D_fj7yv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D4"]
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+position = Vector2(-848, -227)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+position = Vector2(831, -235)
+shape = SubResource("RectangleShape2D_fj7yv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D5"]
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+position = Vector2(-386, -295)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2(831, -235)
+shape = SubResource("RectangleShape2D_fj7yv")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D6"]
+
+[node name="Player" parent="." instance=ExtResource("1_f3sb7")]
+position = Vector2(83, -236)
+
+[node name="Camera2D" type="Camera2D" parent="." groups=["camera"]]
+script = ExtResource("2_tlwt5")
+player_path = NodePath("../Player")
+
+[node name="Killzone" type="Area2D" parent="."]
+script = ExtResource("3_aqk2v")
